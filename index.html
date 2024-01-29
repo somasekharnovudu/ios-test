@@ -11,9 +11,20 @@
     function focusoutevent(e){
       alert('= focusing out')
     }
+    function blurevent(e){
+      alert('= blur event')
+    }
+    function submitevent(e){
+      alert('= submit event')
+    }
+    function changeevent(e){
+      alert('= change event')
+    }
   </script>
 </head>
 <body>
-  <input type="number" onkeypress='keyPressEvent(event)' onfocusout="focusoutevent(event)" >
+  <input type="number" onkeypress='keyPressEvent(event)' onfocusout="focusoutevent(event)" onblur="blurevent(event)"
+  onsubmit="submitevent(event)" onchange="changeevent(event)"
+  >
 </body>
 </html>
